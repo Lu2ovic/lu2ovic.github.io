@@ -1,417 +1,629 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="uE2F8cQ9oWiJL8A-BzfOvTd7QhGPPR7Z3_ZULbniFQQ" />
-    <meta name="description" content="Portfolio de Ludovic Hauptmann-herbette, étudiant en dévellopement web. Découvrez mes projets et réalisations." />
-    <meta name="keywords" content="développeur web, CSS, PHP, HTML, JavaScript, projets, portfolio, ludovic hauptmann-herbette" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="uE2F8cQ9oWiJL8A-BzfOvTd7QhGPPR7Z3_ZULbniFQQ"
+    />
+    <meta
+      name="description"
+      content="Portfolio de Ludovic Hauptmann-herbette, étudiant en dévellopement web. Découvrez mes projets et réalisations."
+    />
+    <meta
+      name="keywords"
+      content="développeur web, CSS, PHP, HTML, JavaScript, projets, portfolio, ludovic hauptmann-herbette"
+    />
     <meta name="author" content="Ludovic HAUPTMANN-HERBETTE" />
 
-    <meta property="og:title" content="Portfolio de Ludovic HAUPTMANN-HERBETTE" />
-    <meta property="og:description" content="Découvrez mes projets, compétences et expériences." />
+    <meta
+      property="og:title"
+      content="Portfolio de Ludovic HAUPTMANN-HERBETTE"
+    />
+    <meta
+      property="og:description"
+      content="Découvrez mes projets, compétences et expériences."
+    />
     <meta property="og:url" content="https://lu2ovic.github.io/" />
-    <meta property="og:image" content="https://lu2ovic.github.io/images/macRose1.png" />
+    <meta
+      property="og:image"
+      content="https://lu2ovic.github.io/images/macRose1.png"
+    />
     <meta property="og:type" content="website" />
 
     <title>Ludovic Hauptmann-Herbette - Portfolio</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="stylesheet" href="https://use.typekit.net/dny6twg.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="preload" as="image" href="/images/macRose1.png">
+    <link rel="preload" as="image" href="/images/macRose2Bis.png">
+    <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+    <link rel="dns-prefetch" href="https://use.typekit.net">
+    <link rel="stylesheet" href="https://use.typekit.net/dny6twg.css" />
     <link href="/styles/style.css" rel="stylesheet" />
-</head>
-<body>
-    <div class="cursor"><img src="/images/pointeurcurseur (1).svg" alt="Curseur"></div>
+  </head>
+  <body>
+    <div class="cursor">
+      <img src="/images/pointeurcurseur (1).svg" alt="Curseur" />
+    </div>
     <div class="loader">
-        <div>L</div>
+      <div>L</div>
     </div>
     <div class="scroller" data-speed="fast" id="home">
-        <ul class="tag-list scroller__inner">
-            <li>Portfolio</li>
-            <li>-</li>
-            <li>Ludovic HAUPTMANN-HERBETTE</li>
-            <li>-</li>
-            <li>Recherche Alternance/Stage</li>
-            <li>-</li>
-            <li>Portfolio</li>
-            <li>-</li>
-            <li>Ludovic HAUPTMANN-HERBETTE</li>
-            <li>-</li>
-            <li>Recherche Alternance/Stage</li>
-            <li>-</li>
-            <li>Portfolio</li>
-            <li>-</li>
-            <li>Ludovic HAUPTMANN-HERBETTE</li>
-            <li>-</li>
-            <li>Recherche Alternance/Stage</li>
-            <li>-</li>
-        </ul>
+      <ul class="tag-list scroller__inner">
+        <li>Portfolio</li>
+        <li>-</li>
+        <li>Ludovic HAUPTMANN-HERBETTE</li>
+        <li>-</li>
+        <li>Portfolio</li>
+        <li>-</li>
+        <li>Ludovic HAUPTMANN-HERBETTE</li>
+        <li>-</li>
+        <li>Portfolio</li>
+        <li>-</li>
+        <li>Ludovic HAUPTMANN-HERBETTE</li>
+        <li>-</li>
+        <li>Portfolio</li>
+        <li>-</li>
+        <li>Ludovic HAUPTMANN-HERBETTE</li>
+        <li>-</li>
+      </ul>
     </div>
     <header>
-        <nav>
-            <a href="#home">L</a>
-            <ul>
-                <div class="iconeMenu">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <li><a href="#projets" data-id="projets">Mes Projets</a></li>
-                <li><a href="#propos" data-id="propos">À Propos</a></li>
-                <li><a href="#contact" data-id="contact">Contact</a></li>
-                <li><a href="#moncv" data-id="moncv">Mon CV</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <a href="#home">L</a>
+        <ul>
+          <div class="iconeMenu">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <li><a href="#projets" data-id="projets">Mes Projets</a></li>
+          <li><a href="#propos" data-id="propos">À Propos</a></li>
+          <li><a href="#contact" data-id="contact">Contact</a></li>
+          <li><a href="#moncv" data-id="moncv">Mon CV</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <div class="banner">
-            <div class="image-container">
-                <img src="/images/macRose1.png" alt="macbook">
-            </div>
-            <div>
-                <h1>Développeur web</h1>
-                <div class="image-container">
-                    <img src="/images/macRose2Bis.png" alt="macbook">
-                </div>
-            </div>
+      <div class="banner">
+        <div class="image-container">
+          <img src="/images/macRose1.png" alt="macbook" />
         </div>
-        <section id="projets">
+        <div>
+          <h1>Développeur web</h1>
+          <div class="image-container">
+            <img src="/images/macRose2Bis.png" alt="macbook" />
+          </div>
+        </div>
+      </div>
+      <section id="projets">
+        <div>
+          <img src="/images/Vector 36arroundRowLeft.svg" alt="flèche gauche" />
+          <h2 class="explorer">Explorer</h2>
+          <img src="/images/Vector 37arroundRowRight.svg" alt="flèche droite" />
+        </div>
+        <h2>Mes Projets</h2>
+        <div class="ProjetSPA">
+          <div>
+            <div class="container_3d">
+              <img
+                id="tablet"
+                class="orientationTab"
+                src="/images/MiniaNos_courses.png"
+                alt="tablette avec le site nos courses"
+                loading="lazy"
+              />
+            </div>
             <div>
-                <img src="/images/Vector 36arroundRowLeft.svg" alt="flèche gauche">
-                <h2 class="explorer">Explorer</h2>
-                <img src="/images/Vector 37arroundRowRight.svg" alt="flèche droite">
+              <div>
+                <ul>
+                  <li>React - TypeScript</li>
+                  <li>Api Symfony</li>
+                  <li>Websockets</li>
+                </ul>
+                <div class="boutonVoir" data-modal="modal8">Voir</div>
+              </div>
             </div>
-            <h2>Mes Projets</h2>
-            <div class="ProjetSPA">
-                <div>
-                    <div class="container_3d">
-                        <img  id="tablet" class="orientationTab coucher" src="/images/MiniaSPA.png" alt="tablette avec le site d'une SPA" loading="lazy">
-                    </div> 
-                    <div>
-                        <div>
-                            <ul>
-                                <li>Base de donnée</li>
-                                <li>Design web</li>
-                                <li>PHP</li>
-                            </ul>
-                            <div class="boutonVoir" data-modal="modal1">Voir</div>
-                        </div>
-                        
-                    </div>
-                </div>
-                <div>
-                    <h3>Site SPA</h3>
-                    <p>Ce projet consistait à la création d’un site pour permettre de voir et adopter les animaux disponible dans les refuges.</p>
-                </div>
+          </div>
+          <div>
+            <h3>Site Nos courses</h3>
+            <p>
+              Ce projet est un site de gestion de listes de courses en collaboration. 
+            </p>
+          </div>
+        </div>
+        <div class="ProjetMairie">
+          <div>
+            <h3>Site Mairie</h3>
+            <p>
+              Ce projet consistait à la création d’un site pour la mairie de
+              Fulleren, dans le cadre d’un stage de deux mois.
+            </p>
+          </div>
+          <div>
+            <div class="container_3d">
+              <img
+                id="tablet"
+                class="orientationTab"
+                src="/images/MiniaMairie.png"
+                alt="tablette avec le site d'une mairie"
+                loading="lazy"
+              />
             </div>
-            <div class="ProjetMairie">
-                <div>
-                    <h3>Site Mairie</h3>
-                    <p>Ce projet consistait à la création d’un site pour la mairie de Fulleren, dans le cadre d’un stage de deux mois.</p>
-                </div>
-                <div>
-                    <div class="container_3d">
-                        <img id="tablet" class="orientationTab" src="/images/MiniaMairie.png" alt="tablette avec le site d'une mairie" loading="lazy">
-                    </div>
-                    <div>
-                        <div>
-                            <div class="boutonVoir boutonBis" data-modal="modal2">Voir</div>
-                            <ul>
-                                <li>CMS Wordpress</li>
-                                <li>Design web</li>
-                                <li>Arborescence</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                </div>
+            <div>
+              <div>
+                <div class="boutonVoir boutonBis" data-modal="modal2">Voir</div>
+                <ul>
+                  <li>CMS Wordpress</li>
+                  <li>Design web</li>
+                  <li>Arborescence</li>
+                </ul>
+              </div>
             </div>
-            
-            <div class="part2">
-                <div class="carousel-container">
-                    <div class="carousel">
-                        <div class="carousel-item">
-                            <div class="container_3d">
-                                <img id="tablet" class="orientationTab" src="/images/MiniaAstronaute.png" alt="tablette avec le site d'astronaute" loading="lazy">
-                            </div>
-                            <h4>Site astronaute</h4>
-                            <div class="boutonVoir" data-modal="modal3">
-                                voir
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container_3d">
-                                <img id="tablet" class="orientationTab" src="/images/MiniaJeux.png" alt="tablette avec le site contenant un jeu" loading="lazy">
-                            </div>
-                            <h4>Petit jeu</h4>
-                            <div class="boutonVoir" data-modal="modal4">
-                                voir
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container_3d">
-                                <img id="tablet" class="orientationTab" src="/images/MiniaTurnip.png" alt="tablette avec un logo" loading="lazy">
-                            </div>
-                            <h4>Motion design</h4>
-                            <div class="boutonVoir" data-modal="modal5">
-                                voir
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container_3d">
-                                <img id="tablet" class="orientationTab coucher" src="/images/MiniaPortFolioMMI.png" alt="tablette avec un eportfolio" loading="lazy">
-                            </div>
-                            <h4>Portfolio MMI</h4>
-                            <div class="boutonVoir" data-modal="modal6">
-                                voir
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="container_3d">
-                                <img id="tablet" class="orientationTab" src="/images/miniaPoster.png" alt="tablette avec un poster" loading="lazy">
-                            </div>
-                            <h4>Poster</h4>
-                            <div class="boutonVoir" data-modal="modal7">
-                                voir
-                            </div>
-                        </div>
-                        <!-- Ajoutez autant d'éléments que nécessaire -->
-                    </div>
-                
-                    <div class="carousel-controls">
-                        <button class="prev-btn">
-                            <img src="/images/Arrow 1rowLeftBouton.svg" alt="flèche" loading="lazy">
-                        </button>
-                        <div class="carousel-dots">
-                            <!-- Les points seront générés dynamiquement -->
-                        </div>
-                        <button class="next-btn">
-                            <img src="/images/Arrow 4rowRightBouton.svg" alt="flèche" loading="lazy">
-                        </button>
-                    </div>
-                </div>
-                <img class="blocN" src="/images/bloc_noteBlocNote.svg" alt="dessin bloc Note" loading="lazy">
-                <img class="crayon" src="/images/crayonpen.svg" alt="crayon dessiné" loading="lazy">
-            </div>
-            <div class="ajuste"></div>
-        </section>
-        <section id="propos">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Calque_1" x="0px"
-                    y="0px" viewBox="0 0 1300 550" style="enable-background:new 0 0 1300 550;" xml:space="preserve">
-                <style type="text/css">
-                    .st1{opacity:0.6;fill:var(--noir);enable-background:new;}
-                </style>
+          </div>
+        </div>
 
-                    <path class="st1" d="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250">
-                        <animate
-                                attributeName="d"
-                                dur="5s"
-                                begin="1s"
-                                values="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
+        <div class="part2">
+          <div class="carousel-container">
+            <div class="carousel">
+              <div class="carousel-item">
+                <div class="container_3d">
+                  <img
+                    id="tablet"
+                    class="orientationTab coucher"
+                    src="/images/MiniaBEHH.png"
+                    alt="tablette avec le site BEHH"
+                    loading="lazy"
+                  />
+                </div>
+                <h4>Site BEHH (Prestashop)</h4>
+                <div class="boutonVoir" data-modal="modal9">voir</div>
+              </div>
+              <div class="carousel-item">
+                <div class="container_3d">
+                  <img
+                    id="tablet"
+                    class="orientationTab coucher"
+                    src="/images/MiniaSPA.png"
+                    alt="tablette avec le site d'une SPA"
+                    loading="lazy"
+                  />
+                </div>
+                <h4>Site SPA</h4>
+                <div class="boutonVoir" data-modal="modal1">voir</div>
+              </div>
+              <div class="carousel-item">
+                <div class="container_3d">
+                  <img
+                    id="tablet"
+                    class="orientationTab"
+                    src="/images/MiniaAstronaute.png"
+                    alt="tablette avec le site d'astronaute"
+                    loading="lazy"
+                  />
+                </div>
+                <h4>Site astronaute</h4>
+                <div class="boutonVoir" data-modal="modal3">voir</div>
+              </div>
+              <div class="carousel-item">
+                <div class="container_3d">
+                  <img
+                    id="tablet"
+                    class="orientationTab"
+                    src="/images/MiniaJeux.png"
+                    alt="tablette avec le site contenant un jeu"
+                    loading="lazy"
+                  />
+                </div>
+                <h4>Petit jeu</h4>
+                <div class="boutonVoir" data-modal="modal4">voir</div>
+              </div>
+              <div class="carousel-item">
+                <div class="container_3d">
+                  <img
+                    id="tablet"
+                    class="orientationTab"
+                    src="/images/MiniaTurnip.png"
+                    alt="tablette avec un logo"
+                    loading="lazy"
+                  />
+                </div>
+                <h4>Motion design</h4>
+                <div class="boutonVoir" data-modal="modal5">voir</div>
+              </div>
+              <div class="carousel-item">
+                <div class="container_3d">
+                  <img
+                    id="tablet"
+                    class="orientationTab coucher"
+                    src="/images/MiniaPortFolioMMI.png"
+                    alt="tablette avec un eportfolio"
+                    loading="lazy"
+                  />
+                </div>
+                <h4>Portfolio MMI</h4>
+                <div class="boutonVoir" data-modal="modal6">voir</div>
+              </div>
+              <div class="carousel-item">
+                <div class="container_3d">
+                  <img
+                    id="tablet"
+                    class="orientationTab"
+                    src="/images/miniaPoster.png"
+                    alt="tablette avec un poster"
+                    loading="lazy"
+                  />
+                </div>
+                <h4>Poster</h4>
+                <div class="boutonVoir" data-modal="modal7">voir</div>
+              </div>
+              <!-- Ajoutez autant d'éléments que nécessaire -->
+            </div>
+
+            <div class="carousel-controls">
+              <button class="prev-btn">
+                <img
+                  src="/images/Arrow 1rowLeftBouton.svg"
+                  alt="flèche"
+                  loading="lazy"
+                />
+              </button>
+              <div class="carousel-dots">
+                <!-- Les points seront générés dynamiquement -->
+              </div>
+              <button class="next-btn">
+                <img
+                  src="/images/Arrow 4rowRightBouton.svg"
+                  alt="flèche"
+                  loading="lazy"
+                />
+              </button>
+            </div>
+          </div>
+          <img
+            class="blocN"
+            src="/images/bloc_noteBlocNote.svg"
+            alt="dessin bloc Note"
+            loading="lazy"
+          />
+          <img
+            class="crayon"
+            src="/images/crayonpen.svg"
+            alt="crayon dessiné"
+            loading="lazy"
+          />
+        </div>
+        <div class="ajuste"></div>
+      </section>
+      <section id="propos">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="1.1"
+          id="Calque_1"
+          x="0px"
+          y="0px"
+          viewBox="0 0 1300 550"
+          style="enable-background: new 0 0 1300 550"
+          xml:space="preserve"
+        >
+          <style type="text/css">
+            .st1 {
+              opacity: 0.6;
+              fill: var(--noir);
+              enable-background: new;
+            }
+          </style>
+
+          <path
+            class="st1"
+            d="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250"
+          >
+            <animate
+              attributeName="d"
+              dur="5s"
+              begin="1s"
+              values="M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
                                 M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
                                 M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250"
-                                repeatCount="indefinite"
-                        />
-                    </path>
+              repeatCount="indefinite"
+            />
+          </path>
 
-                    <path class="st1" d="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250">
-                        <animate
-                                attributeName="d"
-                                dur="5s"
-                                values="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
+          <path
+            class="st1"
+            d="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250"
+          >
+            <animate
+              attributeName="d"
+              dur="5s"
+              values="M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250;
                                 M 0 250 C 600 450 650 100 1300 250 L 1300 550 L 0 550 L 0 250;
                                 M 0 250 C 600 100 650 450 1300 250 L 1300 550 L 0 550 L 0 250"
-                                repeatCount="indefinite"
-                        />
-                    </path>
+              repeatCount="indefinite"
+            />
+          </path>
 
-                    <path class="st1" d="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250">
-                        <animate
-                                attributeName="d"
-                                dur="5s"
-                                begin="2s"
-                                values="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
+          <path
+            class="st1"
+            d="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250"
+          >
+            <animate
+              attributeName="d"
+              dur="5s"
+              begin="2s"
+              values="M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
                                 M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
                                 M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250"
-                                repeatCount="indefinite"
-                        />
-                    </path>
+              repeatCount="indefinite"
+            />
+          </path>
 
-                    <path class="st1" d="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250">
-                        <animate
-                                attributeName="d"
-                                dur="5s"
-                                values="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
+          <path
+            class="st1"
+            d="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250"
+          >
+            <animate
+              attributeName="d"
+              dur="5s"
+              values="M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250;
                                 M 0 250 C 950 350 950 150 1300 250 L 1300 550 L 0 550 L 0 250;
                                 M 0 250 C 350 150 350 350 1300 250 L 1300 550 L 0 550 L 0 250"
-                                repeatCount="indefinite"
-                        />
-                    </path>
+              repeatCount="indefinite"
+            />
+          </path>
+        </svg>
 
+        <h2>À propos</h2>
+        <div>
+          <div>
+            <p>
+              Je suis Ludovic HAUPTMANN-HERBETTE, j’ai 21 ans. Animé par l’idée
+              de tester divers types de créativité, associé à la curiosité qui
+              m’accompagne, et mon intérêt pour le monde du numérique. En 2022,
+              j’ai décidé de poursuivre mes études dans le BUT Métier du
+              Multimédia et de l’Internet (MMI), où je me trouve actuellement.
+              Avant de commencer cette formation, j'ai obtenu avec mention bien,
+              mon bac général spécialité mathématique et NSI (Numérique et
+              Science de l’Internet).
+            </p>
+            <p>
+              Mon intérêt pour le développement web, découvert lors de ma
+              terminale en NSI, m'a conduit à choisir la spécialisation en
+              Développement Web et Dispositifs Interactifs pour ma deuxième
+              année de BUT. J'apprécie autant l'aspect logique du codage que la
+              dimension créative du design de sites web. Aujourd’hui, je termine
+              ma troisième année avec un stage de fin d’études, et je suis
+              pleinement déterminé à me professionnaliser dans ce domaine.
+            </p>
+          </div>
+          <div class="poche">
+            <img src="/images/Vector 46pocket.svg" alt="poche" loading="lazy" />
+            <img src="/images/poinghand.svg" alt="poing" loading="lazy" />
+          </div>
+        </div>
+        <div class="comp">
+          <h3>Mes compétences</h3>
+          <div class="tableau">
+            <div class="compWeb">
+              <div class="canvas-container">
+                <canvas id="logoCanvas"></canvas>
+              </div>
+              <div id="infoBulle" class="infoBulle"></div>
+              <img
+                class="iconeComp"
+                src="/images/logoCodelogoCode.svg"
+                alt="icone code"
+                loading="lazy"
+              />
+              <h3>Développement Web</h3>
+            </div>
+            <div class="compCrea">
+              <div class="canvas-container">
+                <canvas id="logoCanvasBis"></canvas>
+              </div>
+              <div id="infoBulleBis" class="infoBulleBis"></div>
+              <img
+                class="iconeComp"
+                src="/images/LogoCourbelogoCrea.svg"
+                alt="icone design"
+                loading="lazy"
+              />
+              <h3>Création numérique</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/ludovic-hauptmann-herbette-880220265/"
+          >
+            <svg
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+              fill="#F8E3D0"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M82 8H18C12.48 8 8 12.48 8 18V82C8 87.52 12.48 92 18 92H82C87.52 92 92 87.52 92 82V18C92 12.48 87.52 8 82 8ZM34 40V78H22V40H34ZM22 28.94C22 26.14 24.4 24 28 24C31.6 24 33.86 26.14 34 28.94C34 31.74 31.76 34 28 34C24.4 34 22 31.74 22 28.94ZM78 78H66C66 78 66 59.48 66 58C66 54 64 50 59 49.92H58.84C54 49.92 52 54.04 52 58C52 59.82 52 78 52 78H40V40H52V45.12C52 45.12 55.86 40 63.62 40C71.56 40 78 45.46 78 56.52V78Z"
+              />
             </svg>
-
-            <h2>À propos</h2>
-            <div>
-                <div>
-                    <p>
-                        Je suis Ludovic HAUPTMANN-HERBETTE, j’ai 20 ans. Animé par l’idée de tester divers types de créativité, associé à la curiosité qui m’accompagne, et mon intérêt pour le monde du numérique. En 2022, j’ai décidé de poursuivre mes études dans le BUT Métier du Multimédia et de l’Internet (MMI), où je me trouve actuellement. Avant de commencer cette formation, j'ai obtenu avec mention bien, mon bac général spécialité mathématique et NSI (Numérique et Science de l’Internet).
-                    </p>
-                    <p>
-                        Mon intérêt pour le développement web, découvert lors de ma terminale en NSI, m'a conduit à choisir la spécialisation en Développement Web et Dispositifs Interactifs pour ma deuxième année de BUT. J'apprécie autant l'aspect logique du codage que la dimension créative du design de sites web. Aujourd'hui, je commence ma troisième année, déterminé à me professionnaliser dans ce domaine.
-                    </p>
-                </div>
-                <div class="poche">
-                    <img src="/images/Vector 46pocket.svg" alt="poche" loading="lazy">
-                    <img src="/images/poinghand.svg" alt="poing" loading="lazy">
-                </div>
-            </div>
-            <div class="comp">
-                <h3>Mes compétences</h3>
-                <div class="tableau">
-                    <div class="compWeb">
-                        <div class="canvas-container">
-                            <canvas id="logoCanvas"></canvas>
-                        </div>
-                        <div id="infoBulle" class="infoBulle"></div>
-                        <img class="iconeComp" src="/images/logoCodelogoCode.svg" alt="icone code" loading="lazy">
-                        <h3>Développement Web</h3>
-                    </div>
-                    <div class="compCrea">
-                        <div class="canvas-container">
-                            <canvas id="logoCanvasBis"></canvas>
-                        </div>
-                        <div id="infoBulleBis" class="infoBulleBis"></div>
-                        <img class="iconeComp" src="/images/LogoCourbelogoCrea.svg" alt="icone design" loading="lazy">
-                        <h3>Création numérique</h3>
-                    </div>
-                </div>
-                
-            </div>
-            
-            
-
-        </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <div>
-                <a href="https://www.linkedin.com/in/ludovic-hauptmann-herbette-880220265/">
-                    <svg width="100" height="100" viewBox="0 0 100 100" fill="#F8E3D0" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M82 8H18C12.48 8 8 12.48 8 18V82C8 87.52 12.48 92 18 92H82C87.52 92 92 87.52 92 82V18C92 12.48 87.52 8 82 8ZM34 40V78H22V40H34ZM22 28.94C22 26.14 24.4 24 28 24C31.6 24 33.86 26.14 34 28.94C34 31.74 31.76 34 28 34C24.4 34 22 31.74 22 28.94ZM78 78H66C66 78 66 59.48 66 58C66 54 64 50 59 49.92H58.84C54 49.92 52 54.04 52 58C52 59.82 52 78 52 78H40V40H52V45.12C52 45.12 55.86 40 63.62 40C71.56 40 78 45.46 78 56.52V78Z"/>
-                    </svg>
-                    <span class="tooltip">LinkedIn</span>
-                </a>
-                <a href="mailto:ludovic.hauptmann1@gmail.com" class="mail">
-                    <svg fill="#000000" version="1.1" baseProfile="tiny" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
-                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-                        width="800px" height="800px" viewBox="-0.5 0.5 42 42" xml:space="preserve">
-                        <path d="M40.5,31.5v-18c0,0-18.2,12.7-19.97,13.359C18.79,26.23,0.5,13.5,0.5,13.5v18c0,2.5,0.53,3,3,3h34
+            <span class="tooltip">LinkedIn</span>
+          </a>
+          <a href="mailto:ludovic.hauptmann1@gmail.com" class="mail">
+            <svg
+              fill="#000000"
+              version="1.1"
+              baseProfile="tiny"
+              id="Layer_1"
+              xmlns:x="&ns_extend;"
+              xmlns:i="&ns_ai;"
+              xmlns:graph="&ns_graphs;"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+              width="800px"
+              height="800px"
+              viewBox="-0.5 0.5 42 42"
+              xml:space="preserve"
+            >
+              <path
+                d="M40.5,31.5v-18c0,0-18.2,12.7-19.97,13.359C18.79,26.23,0.5,13.5,0.5,13.5v18c0,2.5,0.53,3,3,3h34
                         C40.029,34.5,40.5,34.061,40.5,31.5z M40.471,9.971c0-1.821-0.531-2.471-2.971-2.471h-34c-2.51,0-3,0.78-3,2.6l0.03,0.28
-                        c0,0,18.069,12.44,20,13.12C22.57,22.71,40.5,10.1,40.5,10.1L40.471,9.971z"/>
-                    </svg>
-                    <span class="tooltip">Email</span>
-                </a>
-                <a href="https://github.com/Lu2ovic">
-                    <svg width="100" height="100" viewBox="0 0 100 100" fill="#F8E3D0" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M35.582 93.672C37.004 93.06 38 91.646 38 90V79.2C38 78.806 38.032 78.396 38.082 77.98C38.054 77.988 38.028 77.994 38 78C38 78 32 78 30.8 78C27.8 78 25.2 76.8 24 74.4C22.6 71.8 22 67.4 18.4 65C17.8 64.6 18.2 64 19.4 64C20.6 64.2 23.2 65.8 24.8 68C26.6 70.2 28.4 72 31.6 72C36.574 72 39.24 71.75 40.844 70.89C42.712 68.112 45.298 66 48 66V65.95C36.664 65.586 29.422 61.818 26.05 56C18.72 56.084 12.338 56.81 8.696 57.414C8.58 56.76 8.48 56.102 8.394 55.44C11.988 54.848 18.08 54.146 25.084 54.012C24.86 53.46 24.666 52.894 24.502 52.314C17.48 51.958 11.42 52.236 8.128 52.508C8.088 51.844 8.034 51.182 8.026 50.51C11.324 50.24 17.22 49.97 24.062 50.288C23.904 49.288 23.802 48.266 23.802 47.202C23.802 43.802 25.002 40.202 27.202 37.202C26.202 33.802 24.802 26.602 27.602 24.002C33.002 24.002 36.802 26.602 38.602 28.202C42 26.8 45.8 26 50 26C54.2 26 58 26.8 61.2 28.2C63 26.6 66.8 24 72.2 24C75.2 26.8 73.6 34 72.6 37.2C74.8 40.2 76 43.6 75.8 47.2C75.8 48.168 75.71 49.102 75.58 50.018C82.578 49.674 88.634 49.95 91.988 50.222C91.984 50.896 91.922 51.554 91.886 52.22C88.544 51.944 82.336 51.66 75.168 52.042C74.99 52.714 74.774 53.368 74.518 54.002C81.61 54.094 87.848 54.78 91.614 55.38C91.528 56.044 91.428 56.702 91.312 57.354C87.488 56.742 80.97 56.026 73.554 55.99C70.224 61.746 63.114 65.5 52 65.938V66C57.2 66 62 73.8 62 79.2V90C62 91.646 62.996 93.06 64.418 93.672C82.74 87.608 96 70.328 96 50C96 24.636 75.366 4 50 4C24.634 4 4 24.636 4 50C4 70.328 17.26 87.608 35.582 93.672Z"/>
-                    </svg>
-                    <span class="tooltip">GitHub</span>
-                </a>
+                        c0,0,18.069,12.44,20,13.12C22.57,22.71,40.5,10.1,40.5,10.1L40.471,9.971z"
+              />
+            </svg>
+            <span class="tooltip">Email</span>
+          </a>
+          <a href="https://github.com/Lu2ovic">
+            <svg
+              width="100"
+              height="100"
+              viewBox="0 0 100 100"
+              fill="#F8E3D0"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M35.582 93.672C37.004 93.06 38 91.646 38 90V79.2C38 78.806 38.032 78.396 38.082 77.98C38.054 77.988 38.028 77.994 38 78C38 78 32 78 30.8 78C27.8 78 25.2 76.8 24 74.4C22.6 71.8 22 67.4 18.4 65C17.8 64.6 18.2 64 19.4 64C20.6 64.2 23.2 65.8 24.8 68C26.6 70.2 28.4 72 31.6 72C36.574 72 39.24 71.75 40.844 70.89C42.712 68.112 45.298 66 48 66V65.95C36.664 65.586 29.422 61.818 26.05 56C18.72 56.084 12.338 56.81 8.696 57.414C8.58 56.76 8.48 56.102 8.394 55.44C11.988 54.848 18.08 54.146 25.084 54.012C24.86 53.46 24.666 52.894 24.502 52.314C17.48 51.958 11.42 52.236 8.128 52.508C8.088 51.844 8.034 51.182 8.026 50.51C11.324 50.24 17.22 49.97 24.062 50.288C23.904 49.288 23.802 48.266 23.802 47.202C23.802 43.802 25.002 40.202 27.202 37.202C26.202 33.802 24.802 26.602 27.602 24.002C33.002 24.002 36.802 26.602 38.602 28.202C42 26.8 45.8 26 50 26C54.2 26 58 26.8 61.2 28.2C63 26.6 66.8 24 72.2 24C75.2 26.8 73.6 34 72.6 37.2C74.8 40.2 76 43.6 75.8 47.2C75.8 48.168 75.71 49.102 75.58 50.018C82.578 49.674 88.634 49.95 91.988 50.222C91.984 50.896 91.922 51.554 91.886 52.22C88.544 51.944 82.336 51.66 75.168 52.042C74.99 52.714 74.774 53.368 74.518 54.002C81.61 54.094 87.848 54.78 91.614 55.38C91.528 56.044 91.428 56.702 91.312 57.354C87.488 56.742 80.97 56.026 73.554 55.99C70.224 61.746 63.114 65.5 52 65.938V66C57.2 66 62 73.8 62 79.2V90C62 91.646 62.996 93.06 64.418 93.672C82.74 87.608 96 70.328 96 50C96 24.636 75.366 4 50 4C24.634 4 4 24.636 4 50C4 70.328 17.26 87.608 35.582 93.672Z"
+              />
+            </svg>
+            <span class="tooltip">GitHub</span>
+          </a>
+        </div>
+      </section>
+      <section id="moncv">
+        <div>
+          <div class="yeux">
+            <div class="oeil">
+              <div class="pupille">
+                <svg
+                  width="51"
+                  height="51"
+                  viewBox="0 0 51 51"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.22833 23.3567C2.22833 21.6543 1.90827 19.3797 2.02602 17.3911C2.03801 16.7552 2.10547 16.1582 2.27766 15.6749C2.32873 15.4805 2.38821 15.293 2.45716 15.1136C2.58356 14.7847 2.7344 14.5256 2.90353 14.3113C3.27886 13.4017 3.60873 12.4664 4.28783 11.7793C5.26769 10.7878 6.42952 10.0289 7.37708 9.07013C10.9692 5.43539 15.9575 5.17285 20.146 2.8183C22.5419 1.47143 26.8365 2.19312 29.6197 2.19312C30.5375 2.19312 31.3443 2.35659 32.1059 2.61614C33.0376 2.74475 33.9867 2.90527 34.9744 3.073C37.7128 3.53805 41.2722 3.635 42.8005 6.38416C43.6334 7.88242 44.6035 9.23387 45.1574 10.8531C46.5511 14.927 46.7014 19.643 47.6288 23.8661C48.0735 25.891 48.773 27.6078 48.773 29.7243C48.773 31.9492 49.3898 35.2012 48.5899 37.296C47.244 40.8208 42.7973 45.1681 39.2078 46.4653C36.9597 47.2778 34.7893 48.277 32.4114 48.665C28.7203 49.2675 24.7042 48.8734 20.9698 48.8734C18.4165 48.8734 15.7754 47.8851 13.3496 47.1137C12.235 46.7592 11.1703 45.2919 10.3061 44.5203C7.43933 41.9608 6.23975 37.4014 4.4709 34.0774C3.28607 31.8509 2.22833 27.8474 2.22833 25.3249V23.3567Z"
+                    fill="#0D0D0D"
+                  />
+                  <path
+                    d="M11.702 38.4537C8.26062 38.1055 6.29071 34.2179 4.72261 31.5999C3.07843 28.8548 2.22833 26.5359 2.22833 23.3567C2.22833 20.944 1.58544 17.3817 2.45716 15.1136C3.04772 13.577 4.17165 13.564 5.20316 12.5202C7.88859 9.80291 10.2948 6.64855 13.9446 5.31903C17.6201 3.98015 21.3825 3.31001 25.249 2.6099C28.6137 2.00065 31.5639 2.49383 34.9744 3.073C37.7128 3.53805 41.2722 3.635 42.8005 6.38416C43.6334 7.88242 44.6035 9.23387 45.1574 10.8531C46.5511 14.927 46.7014 19.643 47.6288 23.8661C48.0735 25.891 48.773 27.6078 48.773 29.7243C48.773 31.9492 49.3898 35.2012 48.5899 37.296C47.244 40.8208 42.7973 45.1681 39.2078 46.4653C36.9597 47.2778 34.7893 48.277 32.4114 48.665C28.7203 49.2675 24.7042 48.8734 20.9698 48.8734C18.4165 48.8734 15.7754 47.8851 13.3496 47.1137C12.235 46.7592 11.1703 45.2919 10.3061 44.5203C7.43933 41.9607 6.23975 37.4014 4.4709 34.0774C3.28607 31.8509 2.22833 27.8474 2.22833 25.3249C2.22833 23.9742 2.22833 22.6235 2.22833 21.2728C2.22833 19.7081 1.65247 16.7459 2.43428 15.322C3.07857 14.1485 3.35066 12.7275 4.28783 11.7793C5.26769 10.7878 6.42952 10.0289 7.37708 9.07013C10.9692 5.43539 15.9575 5.17285 20.146 2.8183C22.5419 1.47143 26.8365 2.19312 29.6197 2.19312C31.97 2.19312 33.5919 3.26501 35.5922 4.27706"
+                    stroke="#0D0D0D"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
             </div>
-        </section>
-        <section id="moncv">
-            <div>
-                <div class="yeux">
-                    <div class="oeil">
-                        <div class="pupille">
-                            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.22833 23.3567C2.22833 21.6543 1.90827 19.3797 2.02602 17.3911C2.03801 16.7552 2.10547 16.1582 2.27766 15.6749C2.32873 15.4805 2.38821 15.293 2.45716 15.1136C2.58356 14.7847 2.7344 14.5256 2.90353 14.3113C3.27886 13.4017 3.60873 12.4664 4.28783 11.7793C5.26769 10.7878 6.42952 10.0289 7.37708 9.07013C10.9692 5.43539 15.9575 5.17285 20.146 2.8183C22.5419 1.47143 26.8365 2.19312 29.6197 2.19312C30.5375 2.19312 31.3443 2.35659 32.1059 2.61614C33.0376 2.74475 33.9867 2.90527 34.9744 3.073C37.7128 3.53805 41.2722 3.635 42.8005 6.38416C43.6334 7.88242 44.6035 9.23387 45.1574 10.8531C46.5511 14.927 46.7014 19.643 47.6288 23.8661C48.0735 25.891 48.773 27.6078 48.773 29.7243C48.773 31.9492 49.3898 35.2012 48.5899 37.296C47.244 40.8208 42.7973 45.1681 39.2078 46.4653C36.9597 47.2778 34.7893 48.277 32.4114 48.665C28.7203 49.2675 24.7042 48.8734 20.9698 48.8734C18.4165 48.8734 15.7754 47.8851 13.3496 47.1137C12.235 46.7592 11.1703 45.2919 10.3061 44.5203C7.43933 41.9608 6.23975 37.4014 4.4709 34.0774C3.28607 31.8509 2.22833 27.8474 2.22833 25.3249V23.3567Z" fill="#0D0D0D"/>
-                                <path d="M11.702 38.4537C8.26062 38.1055 6.29071 34.2179 4.72261 31.5999C3.07843 28.8548 2.22833 26.5359 2.22833 23.3567C2.22833 20.944 1.58544 17.3817 2.45716 15.1136C3.04772 13.577 4.17165 13.564 5.20316 12.5202C7.88859 9.80291 10.2948 6.64855 13.9446 5.31903C17.6201 3.98015 21.3825 3.31001 25.249 2.6099C28.6137 2.00065 31.5639 2.49383 34.9744 3.073C37.7128 3.53805 41.2722 3.635 42.8005 6.38416C43.6334 7.88242 44.6035 9.23387 45.1574 10.8531C46.5511 14.927 46.7014 19.643 47.6288 23.8661C48.0735 25.891 48.773 27.6078 48.773 29.7243C48.773 31.9492 49.3898 35.2012 48.5899 37.296C47.244 40.8208 42.7973 45.1681 39.2078 46.4653C36.9597 47.2778 34.7893 48.277 32.4114 48.665C28.7203 49.2675 24.7042 48.8734 20.9698 48.8734C18.4165 48.8734 15.7754 47.8851 13.3496 47.1137C12.235 46.7592 11.1703 45.2919 10.3061 44.5203C7.43933 41.9607 6.23975 37.4014 4.4709 34.0774C3.28607 31.8509 2.22833 27.8474 2.22833 25.3249C2.22833 23.9742 2.22833 22.6235 2.22833 21.2728C2.22833 19.7081 1.65247 16.7459 2.43428 15.322C3.07857 14.1485 3.35066 12.7275 4.28783 11.7793C5.26769 10.7878 6.42952 10.0289 7.37708 9.07013C10.9692 5.43539 15.9575 5.17285 20.146 2.8183C22.5419 1.47143 26.8365 2.19312 29.6197 2.19312C31.97 2.19312 33.5919 3.26501 35.5922 4.27706" stroke="#0D0D0D" stroke-width="4" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="oeil">
-                        <div class="pupille">
-                            <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M2.22833 23.3567C2.22833 21.6543 1.90827 19.3797 2.02602 17.3911C2.03801 16.7552 2.10547 16.1582 2.27766 15.6749C2.32873 15.4805 2.38821 15.293 2.45716 15.1136C2.58356 14.7847 2.7344 14.5256 2.90353 14.3113C3.27886 13.4017 3.60873 12.4664 4.28783 11.7793C5.26769 10.7878 6.42952 10.0289 7.37708 9.07013C10.9692 5.43539 15.9575 5.17285 20.146 2.8183C22.5419 1.47143 26.8365 2.19312 29.6197 2.19312C30.5375 2.19312 31.3443 2.35659 32.1059 2.61614C33.0376 2.74475 33.9867 2.90527 34.9744 3.073C37.7128 3.53805 41.2722 3.635 42.8005 6.38416C43.6334 7.88242 44.6035 9.23387 45.1574 10.8531C46.5511 14.927 46.7014 19.643 47.6288 23.8661C48.0735 25.891 48.773 27.6078 48.773 29.7243C48.773 31.9492 49.3898 35.2012 48.5899 37.296C47.244 40.8208 42.7973 45.1681 39.2078 46.4653C36.9597 47.2778 34.7893 48.277 32.4114 48.665C28.7203 49.2675 24.7042 48.8734 20.9698 48.8734C18.4165 48.8734 15.7754 47.8851 13.3496 47.1137C12.235 46.7592 11.1703 45.2919 10.3061 44.5203C7.43933 41.9608 6.23975 37.4014 4.4709 34.0774C3.28607 31.8509 2.22833 27.8474 2.22833 25.3249V23.3567Z" fill="#0D0D0D"/>
-                                <path d="M11.702 38.4537C8.26062 38.1055 6.29071 34.2179 4.72261 31.5999C3.07843 28.8548 2.22833 26.5359 2.22833 23.3567C2.22833 20.944 1.58544 17.3817 2.45716 15.1136C3.04772 13.577 4.17165 13.564 5.20316 12.5202C7.88859 9.80291 10.2948 6.64855 13.9446 5.31903C17.6201 3.98015 21.3825 3.31001 25.249 2.6099C28.6137 2.00065 31.5639 2.49383 34.9744 3.073C37.7128 3.53805 41.2722 3.635 42.8005 6.38416C43.6334 7.88242 44.6035 9.23387 45.1574 10.8531C46.5511 14.927 46.7014 19.643 47.6288 23.8661C48.0735 25.891 48.773 27.6078 48.773 29.7243C48.773 31.9492 49.3898 35.2012 48.5899 37.296C47.244 40.8208 42.7973 45.1681 39.2078 46.4653C36.9597 47.2778 34.7893 48.277 32.4114 48.665C28.7203 49.2675 24.7042 48.8734 20.9698 48.8734C18.4165 48.8734 15.7754 47.8851 13.3496 47.1137C12.235 46.7592 11.1703 45.2919 10.3061 44.5203C7.43933 41.9607 6.23975 37.4014 4.4709 34.0774C3.28607 31.8509 2.22833 27.8474 2.22833 25.3249C2.22833 23.9742 2.22833 22.6235 2.22833 21.2728C2.22833 19.7081 1.65247 16.7459 2.43428 15.322C3.07857 14.1485 3.35066 12.7275 4.28783 11.7793C5.26769 10.7878 6.42952 10.0289 7.37708 9.07013C10.9692 5.43539 15.9575 5.17285 20.146 2.8183C22.5419 1.47143 26.8365 2.19312 29.6197 2.19312C31.97 2.19312 33.5919 3.26501 35.5922 4.27706" stroke="#0D0D0D" stroke-width="4" stroke-linecap="round"/>
-                            </svg>
-                        </div>
-                    </div>
-                </div>
+            <div class="oeil">
+              <div class="pupille">
+                <svg
+                  width="51"
+                  height="51"
+                  viewBox="0 0 51 51"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.22833 23.3567C2.22833 21.6543 1.90827 19.3797 2.02602 17.3911C2.03801 16.7552 2.10547 16.1582 2.27766 15.6749C2.32873 15.4805 2.38821 15.293 2.45716 15.1136C2.58356 14.7847 2.7344 14.5256 2.90353 14.3113C3.27886 13.4017 3.60873 12.4664 4.28783 11.7793C5.26769 10.7878 6.42952 10.0289 7.37708 9.07013C10.9692 5.43539 15.9575 5.17285 20.146 2.8183C22.5419 1.47143 26.8365 2.19312 29.6197 2.19312C30.5375 2.19312 31.3443 2.35659 32.1059 2.61614C33.0376 2.74475 33.9867 2.90527 34.9744 3.073C37.7128 3.53805 41.2722 3.635 42.8005 6.38416C43.6334 7.88242 44.6035 9.23387 45.1574 10.8531C46.5511 14.927 46.7014 19.643 47.6288 23.8661C48.0735 25.891 48.773 27.6078 48.773 29.7243C48.773 31.9492 49.3898 35.2012 48.5899 37.296C47.244 40.8208 42.7973 45.1681 39.2078 46.4653C36.9597 47.2778 34.7893 48.277 32.4114 48.665C28.7203 49.2675 24.7042 48.8734 20.9698 48.8734C18.4165 48.8734 15.7754 47.8851 13.3496 47.1137C12.235 46.7592 11.1703 45.2919 10.3061 44.5203C7.43933 41.9608 6.23975 37.4014 4.4709 34.0774C3.28607 31.8509 2.22833 27.8474 2.22833 25.3249V23.3567Z"
+                    fill="#0D0D0D"
+                  />
+                  <path
+                    d="M11.702 38.4537C8.26062 38.1055 6.29071 34.2179 4.72261 31.5999C3.07843 28.8548 2.22833 26.5359 2.22833 23.3567C2.22833 20.944 1.58544 17.3817 2.45716 15.1136C3.04772 13.577 4.17165 13.564 5.20316 12.5202C7.88859 9.80291 10.2948 6.64855 13.9446 5.31903C17.6201 3.98015 21.3825 3.31001 25.249 2.6099C28.6137 2.00065 31.5639 2.49383 34.9744 3.073C37.7128 3.53805 41.2722 3.635 42.8005 6.38416C43.6334 7.88242 44.6035 9.23387 45.1574 10.8531C46.5511 14.927 46.7014 19.643 47.6288 23.8661C48.0735 25.891 48.773 27.6078 48.773 29.7243C48.773 31.9492 49.3898 35.2012 48.5899 37.296C47.244 40.8208 42.7973 45.1681 39.2078 46.4653C36.9597 47.2778 34.7893 48.277 32.4114 48.665C28.7203 49.2675 24.7042 48.8734 20.9698 48.8734C18.4165 48.8734 15.7754 47.8851 13.3496 47.1137C12.235 46.7592 11.1703 45.2919 10.3061 44.5203C7.43933 41.9607 6.23975 37.4014 4.4709 34.0774C3.28607 31.8509 2.22833 27.8474 2.22833 25.3249C2.22833 23.9742 2.22833 22.6235 2.22833 21.2728C2.22833 19.7081 1.65247 16.7459 2.43428 15.322C3.07857 14.1485 3.35066 12.7275 4.28783 11.7793C5.26769 10.7878 6.42952 10.0289 7.37708 9.07013C10.9692 5.43539 15.9575 5.17285 20.146 2.8183C22.5419 1.47143 26.8365 2.19312 29.6197 2.19312C31.97 2.19312 33.5919 3.26501 35.5922 4.27706"
+                    stroke="#0D0D0D"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                  />
+                </svg>
+              </div>
             </div>
-            <div class="boutonCV">
-                <a href="pdf/CV_Ludovic_HAUPTMANN-Herbette.pdf"><h4>Voir mon CV</h4></a>
-            </div>
-        </section>
+          </div>
+        </div>
+        <div class="boutonCV">
+          <a href="pdf/CV_Ludovic_HAUPTMANN-Herbette.pdf"
+            ><h4>Voir mon CV</h4></a
+          >
+        </div>
+      </section>
     </main>
     <footer>
-        <p class="mini">Créé en 2024</p>
-        <a href="#home">
-            <img src="/images/Vector 38rowTop.svg" alt="flèche" loading="lazy">
-            <h4>Back to Top</h4>
-        </a>
-        <p class="mini">Ludovic HAUPTMANN-HERBETTE</p>
+      <p class="mini">Créé en 2024</p>
+      <a href="#home">
+        <img src="/images/Vector 38rowTop.svg" alt="flèche" loading="lazy" />
+        <h4>Back to Top</h4>
+      </a>
+      <p class="mini">Ludovic HAUPTMANN-HERBETTE</p>
     </footer>
 
     <div class="menuMobile">
-        <ul>
-            <li><a href="#projets" data-id="projets">Mes Projets</a></li>
-            <li><a href="#propos" data-id="propos">À Propos</a></li>
-            <li><a href="#contact" data-id="contact">Contact</a></li>
-            <li><a href="#moncv" data-id="moncv">Mon CV</a></li>
-        </ul>
+      <ul>
+        <li><a href="#projets" data-id="projets">Mes Projets</a></li>
+        <li><a href="#propos" data-id="propos">À Propos</a></li>
+        <li><a href="#contact" data-id="contact">Contact</a></li>
+        <li><a href="#moncv" data-id="moncv">Mon CV</a></li>
+      </ul>
     </div>
 
     <!-- Modal -->
-<!-- Modal Template -->
-<div class="modal" id="modal-template">
-    <div class="modal-content">
+    <!-- Modal Template -->
+    <div class="modal" id="modal-template">
+      <div class="modal-content">
         <span class="close-button">
-            <img loading="lazy" src="/images/croixcroix.svg" alt="croix">
+          <img loading="lazy" src="/images/croixcroix.svg" alt="croix" />
         </span>
         <h2 class="modal-title">Titre du Modal</h2>
         <div class="presente">
-            <div class="container_3d">
-                <img id="tablet" class="orientationTab modal-tablet" src="" alt="Image de Tablette">
-            </div>
-            <div class="contexte">
-                <h3>Contexte :</h3>
-                <p class="modal-contexte">Description du Contexte</p>
-            </div>
+          <div class="container_3d">
+            <img
+              id="tablet"
+              class="orientationTab modal-tablet"
+              src=""
+              alt="Image de Tablette"
+            />
+          </div>
+          <div class="contexte">
+            <h3>Contexte :</h3>
+            <p class="modal-contexte">Description du Contexte</p>
+          </div>
         </div>
         <div class="realisation">
-            <h3>Réalisation :</h3>
-            <p class="modal-realisation">Description de la Réalisation</p>
+          <h3>Réalisation :</h3>
+          <p class="modal-realisation">Description de la Réalisation</p>
         </div>
         <div class="custom-carousel-wrapper">
-            <h3>Résultats :</h3>
-            <div class="custom-carousel">
-                <!-- Les diapositives seront ajoutées dynamiquement -->
-            </div>
-            <button class="custom-prev-btn" onclick="customPrevSlide()">&#10094;</button>
-            <button class="custom-next-btn" onclick="customNextSlide()">&#10095;</button>
+          <h3>Résultats :</h3>
+          <div class="custom-carousel">
+            <!-- Les diapositives seront ajoutées dynamiquement -->
+          </div>
+          <button class="custom-prev-btn" onclick="customPrevSlide()">
+            &#10094;
+          </button>
+          <button class="custom-next-btn" onclick="customNextSlide()">
+            &#10095;
+          </button>
         </div>
+      </div>
     </div>
-</div>
-
 
     <script src="scriptes/scripte.js"></script>
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Person",
-          "name": "Ludovic HAUPTMANN-HERBETTE",
-          "jobTitle": "Étudiant en Développement Web",
-          "url": "https://lu2ovic.github.io/",
-          "sameAs": [
-            "https://www.linkedin.com/in/ludovic-hauptmann-herbette-880220265/",
-            "https://github.com/Lu2ovic"
-          ],
-          "image": "https://lu2ovic.github.io/images/macRose1.png",
-          "knowsAbout": [
-            "HTML", "CSS", "JavaScript", "PHP"
-          ]
-        }
-        </script>
-        
-</body>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ludovic HAUPTMANN-HERBETTE",
+        "jobTitle": "Étudiant en Développement Web",
+        "url": "https://lu2ovic.github.io/",
+        "sameAs": [
+          "https://www.linkedin.com/in/ludovic-hauptmann-herbette-880220265/",
+          "https://github.com/Lu2ovic"
+        ],
+        "image": "https://lu2ovic.github.io/images/macRose1.png",
+        "knowsAbout": ["HTML", "CSS", "JavaScript", "PHP"]
+      }
+    </script>
+  </body>
 </html>
