@@ -166,7 +166,7 @@ const cursorSizeY = 35;
 const cursorSizeX = 25;
 
 document.addEventListener("mousemove", (e) => {
-    if (isMobile()) return;
+  if (isMobile()) return;
   let x = e.pageX;
   let y = e.pageY;
 
@@ -195,7 +195,9 @@ document.addEventListener("mouseenter", () => {
 
 // Appliquer et retirer la classe grow lors du survol des liens et des boutons
 document
-  .querySelectorAll("a, button, .iconeMenu, .boutonVoir, .close-button, .link-modal")
+  .querySelectorAll(
+    "a, button, .iconeMenu, .boutonVoir, .close-button, .link-modal"
+  )
   .forEach((el) => {
     el.addEventListener("mouseenter", () => {
       cursor.classList.add("grow");
@@ -287,65 +289,69 @@ applyTransforms();
 // Réappliquer les transformations lors du redimensionnement de la fenêtre
 window.addEventListener("resize", applyTransforms);
 
- // orientation des tablettes
+// orientation des tablettes
 
- const tablets = document.querySelectorAll('.orientationTab');
+const tablets = document.querySelectorAll(".orientationTab");
 
- // ✅ Vérifie si c’est un appareil mobile
- function isMobile() {
-     return window.innerWidth <= 768;
- }
- 
- function updateRotation(e) {
-     if (isMobile()) return; // ⛔ Ne fait rien sur mobile
-     if (howModal) return;
- 
-     tablets.forEach(tablet => {
-         const carouselItem = tablet.closest('.carousel-item');
-         if (carouselItem && !carouselItem.classList.contains('visible')) return;
- 
-         const rect = tablet.getBoundingClientRect();
- 
-         const isVisibleInViewport = (
-             rect.bottom > 0 &&
-             rect.right > 0 &&
-             rect.top < window.innerHeight &&
-             rect.left < window.innerWidth
-         );
-         if (!isVisibleInViewport) return;
- 
-         const xAxis = (e.clientX - (rect.left + rect.width / 2)) / rect.width;
-         const yAxis = (e.clientY - (rect.top + rect.height / 2)) / rect.height;
- 
-         const maxRotation = 20;
-         const rotateX = Math.max(Math.min(yAxis * maxRotation, maxRotation), -maxRotation);
-         const rotateY = Math.max(Math.min(-xAxis * maxRotation, maxRotation), -maxRotation);
- 
-         tablet.style.transform = `rotateX(${-rotateX}deg) rotateY(${-rotateY}deg)`;
- 
-         const shadowX = rotateY * 2;
-         const shadowY = -rotateX * 2;
-         const shadowBlur = 20 + Math.abs(rotateX) + Math.abs(rotateY);
- 
-         tablet.style.boxShadow = `${shadowX}px ${shadowY}px ${shadowBlur}px rgba(0, 0, 0, 0.3),
-                                   ${shadowX / 2}px ${shadowY / 2}px ${shadowBlur / 1.5}px rgba(0, 0, 0, 0.15)`;
-     });
- }
- 
- let isRequesting = false;
- 
- document.addEventListener('mousemove', function(e) {
-     if (isMobile()) return; // ⛔ Ignore complètement l’event sur mobile
- 
-     if (!isRequesting) {
-         isRequesting = true;
-         requestAnimationFrame(() => {
-             updateRotation(e);
-             isRequesting = false;
-         });
-     }
- });
- 
+// ✅ Vérifie si c’est un appareil mobile
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
+function updateRotation(e) {
+  if (isMobile()) return; // ⛔ Ne fait rien sur mobile
+  //if (howModal) return;    > pour arrêter l'animation des tablettes lors de l'ouverture du modal
+
+  tablets.forEach((tablet) => {
+    const carouselItem = tablet.closest(".carousel-item");
+    if (carouselItem && !carouselItem.classList.contains("visible")) return;
+
+    const rect = tablet.getBoundingClientRect();
+
+    const isVisibleInViewport =
+      rect.bottom > 0 &&
+      rect.right > 0 &&
+      rect.top < window.innerHeight &&
+      rect.left < window.innerWidth;
+    if (!isVisibleInViewport) return;
+
+    const xAxis = (e.clientX - (rect.left + rect.width / 2)) / rect.width;
+    const yAxis = (e.clientY - (rect.top + rect.height / 2)) / rect.height;
+
+    const maxRotation = 20;
+    const rotateX = Math.max(
+      Math.min(yAxis * maxRotation, maxRotation),
+      -maxRotation
+    );
+    const rotateY = Math.max(
+      Math.min(-xAxis * maxRotation, maxRotation),
+      -maxRotation
+    );
+
+    tablet.style.transform = `rotateX(${-rotateX}deg) rotateY(${-rotateY}deg)`;
+
+    /*const shadowX = rotateY * 2;      --> utilise beaucoup de ressoures = lag
+    const shadowY = -rotateX * 2;
+    const shadowBlur = 20 + Math.abs(rotateX) + Math.abs(rotateY);
+
+    tablet.style.boxShadow = `${shadowX}px ${shadowY}px ${shadowBlur}px rgba(0, 0, 0, 0.3),
+                                   ${shadowX / 2}px ${shadowY / 2}px ${shadowBlur / 1.5}px rgba(0, 0, 0, 0.15)`;*/
+  });
+}
+
+let isRequesting = false;
+
+document.addEventListener("mousemove", function (e) {
+  if (isMobile()) return; // ⛔ Ignore complètement l’event sur mobile
+
+  if (!isRequesting) {
+    isRequesting = true;
+    requestAnimationFrame(() => {
+      updateRotation(e);
+      isRequesting = false;
+    });
+  }
+});
 
 // carrousel
 
@@ -728,7 +734,6 @@ initializeCanvas(
 
 // pages des projets
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const buttons = document.querySelectorAll(".boutonVoir");
   const modals = document.querySelectorAll(".modal");
@@ -1030,10 +1035,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const linkElement = modal.querySelector(".link-modal");
 
         if (data.link && data.link.trim() !== "") {
-            if (linkElement) {
-                linkElement.remove();
-            }
-            modal.querySelector(".modal-content").innerHTML += `
+          if (linkElement) {
+            linkElement.remove();
+          }
+          modal.querySelector(".modal-content").innerHTML += `
                         <a href="https://${data.link}" class="link-modal">
                             <p>${data.link}</p>
                             <img loading="lazy" src="/images/rowLink.svg" alt="row link" class="rowLink" />
