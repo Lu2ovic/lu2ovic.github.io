@@ -289,6 +289,7 @@ nav > ul {
 nav > ul > li {
   flex: 1;
   position: relative;
+  height: fit-content;
 }
 
 li a {
@@ -322,6 +323,10 @@ li::after {
   z-index: -2;
 }
 
+nav li::after {
+  bottom: 0px;
+}
+
 .iconeMenu::after {
   content: ""; /* Nécessaire pour que le pseudo-élément apparaisse */
   position: absolute;
@@ -346,6 +351,10 @@ li::before,
   transform: scaleX(0); /* Initialement invisible horizontalement */
   transform-origin: center; /* Point d'origine de la transformation */
   transition: all 0.5s ease;
+}
+
+nav li::before {
+  bottom: 0px;
 }
 
 li:hover:before,
@@ -405,6 +414,10 @@ li:hover:before,
   transform: scaleX(0); /* Initialement invisible horizontalement */
   transform-origin: center; /* Point d'origine de la transformation */
   transition: all 0.5s ease;
+}
+
+nav .active::before {
+  bottom: 5px;
 }
 
 .active.active-start::before {
