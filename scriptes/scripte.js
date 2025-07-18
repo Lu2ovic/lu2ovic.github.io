@@ -1012,6 +1012,32 @@ document.addEventListener("DOMContentLoaded", function () {
         },
       ],
     },
+    modal10: {
+      title: "Site O PUISSANCE 4",
+      link: "www.opuissance4.com",
+      tabletSrc: { src: "/images/MiniaOp4.png", class: "coucher" },
+      contexte:
+        "Lors de ma troisième année de mon BUT Métier du Multimédia et de l’Internet, j'ai réalisé mon stage de fin de BUT au sein de l'agence de communication O PUISSANCE 4 situé à Sausheim. La tâche principale que je devais réaliser lors de ce stage étais la fusion de l'ancien site vitrine (site WordPress) avec l'ancien site de e-commerce (site PrestaShop) de l'agence.</p></p>Lors de ce même stage, j'ai aussi réalisé des sites vitrine pour deux clients, le site de l'entreprise <a href='https://krill-tp.fr'>KRILL TP</a> et celui de <a href='https://traiteur-schellenberger.fr/'>Traiteur Shellenberger</a>.",
+      realisation:
+        "J’ai créé le nouveau site d’O PUISSANCE 4 avec Elementor et WooCommerce sur WordPress. Dans un premier temps, j’ai fait une maquette avec Figma et j’ai cherché des thèmes WordPress afin de proposer plusieurs design à ma maître de Stage. Une fois un design choisi, je l’ai adapté pour qu’il corresponde à l’entreprise et au design souhaité. </p></p>Ensuite, j’ai créé les différentes pages, en intégrant les éléments souhaités, comme par exemple l’affichage des posts Instagram sur certaines pages. J’ai aussi configuré et mis en place le système d’articles.</p></p>Sur ce site, j’ai fait un gros travail pour essayer d’optimiser encore plus le référencement naturel (SEO) du site (qui avait déjà un bon référencement de base). Pour ce faire, j'ai notamment utilisé l’extension Yoast SEO.</p></p>Enfin, j’ai configuré et mis en place WooCommerce. Cette partie était assez complexe, car la plupart des produits sont personnalisables avec des personnalisations qui leur sont propres. J’ai dû utiliser une extension qui permet d’entrer des champs de personnalisation (couleur, dimension, …), de calculer le prix du produit en fonction des personnalisation choisies et pouvoir faire des calculs avec des conditions, pour des calculs de prix dégressif.",
+      carousel: [
+        {
+          type: "image",
+          src: "/images/projets/posts_insta.png",
+          alt: "posts Instagram site O PUISSANCE 4",
+        },
+        {
+          type: "image",
+          src: "/images/projets/home-boutique.png",
+          alt: "home de la boutique site O PUISSANCE 4",
+        },
+        {
+          type: "image",
+          src: "/images/projets/produits.png",
+          alt: "produits boutique site O PUISSANCE 4",
+        },
+      ],
+    },
   };
 
   // Fonction pour ouvrir le modal

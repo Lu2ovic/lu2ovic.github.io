@@ -772,6 +772,7 @@ p {
   transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
 }
 
+
 .ProjetSPA,
 .ProjetMairie {
   display: flex;
@@ -1394,6 +1395,16 @@ p {
   background-color: var(--vert);
   padding: 10px 20px;
   margin: 10px;
+}
+
+.contexte a {
+  text-decoration: none;
+  color:var(--noir);
+  transition: color 0.3s ease;
+}
+.contexte a:hover {
+  text-decoration: none;
+  color:var(--orange);
 }
 
 .realisation {
