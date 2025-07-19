@@ -161,7 +161,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //      curseur personalisé            /////////
 
 const cursor = document.querySelector(".cursor");
-cursor.style.display = "none";
+//cursor.style.display = "none";
+cursor.classList.add("dissip");
 const cursorSizeY = 35;
 const cursorSizeX = 25;
 
@@ -185,18 +186,20 @@ document.addEventListener("mousemove", (e) => {
 
 // Masquer le curseur personnalisé lorsque la souris quitte l'écran du site
 document.addEventListener("mouseleave", () => {
-  cursor.style.display = "none";
+  //cursor.style.display = "none";
+  cursor.classList.add("dissip");
 });
 
 // Réafficher le curseur personnalisé lorsque la souris entre dans l'écran du site
 document.addEventListener("mouseenter", () => {
-  cursor.style.display = "block";
+  //cursor.style.display = "block";
+  cursor.classList.remove("dissip");
 });
 
 // Appliquer et retirer la classe grow lors du survol des liens et des boutons
 document
   .querySelectorAll(
-    "a, button, .iconeMenu, .boutonVoir, .close-button, .link-modal"
+    "a, button, .iconeMenu, .boutonVoir, .close-button"
   )
   .forEach((el) => {
     el.addEventListener("mouseenter", () => {
@@ -412,6 +415,7 @@ const updateDots = () => {
     dotsContainer.appendChild(dot);
   });
 };
+
 
 const updateCarousel = () => {
   updatePositions();
@@ -1064,11 +1068,12 @@ document.addEventListener("DOMContentLoaded", function () {
           if (linkElement) {
             linkElement.remove();
           }
-          modal.querySelector(".modal-content").innerHTML += `
-                        <a href="https://${data.link}" class="link-modal">
-                            <p>${data.link}</p>
-                            <img loading="lazy" src="/images/rowLink.svg" alt="row link" class="rowLink" />
-                        </a>`;
+          const link = document.createElement("a");
+          link.href = "https://" + data.link;
+          link.classList.add("link-modal");
+          link.innerHTML = `<p>${data.link}</p><img src="/images/rowLink.svg" alt="row link" class="rowLink" />`;
+
+          modal.querySelector(".modal-content").appendChild(link);
         } else if (linkElement) {
           linkElement.remove();
         }

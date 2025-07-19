@@ -26,6 +26,13 @@ body {
   height: 25px;
   position: absolute;
   pointer-events: none;
+  opacity: 100%;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.cursor.dissip{
+  opacity: 0%;
+  transform:translate(10px,-20px);
 }
 
 .cursor img {
@@ -1252,6 +1259,7 @@ p {
 }
 
 .boutonCV {
+  height: 74px;
   display: flex;
   justify-content: center;
 }
@@ -1904,6 +1912,12 @@ p {
 
   .mini {
     font-size: 12px;
+  }
+
+  .carousel-dots span {
+    width: 20px;
+    height: 6px;
+    margin: 0 3px;
   }
 }
 
