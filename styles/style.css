@@ -1621,6 +1621,11 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+
+  .cursor {
+    display: none;
+  }
+
   nav > ul > li {
     display: none;
   }
